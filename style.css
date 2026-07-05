@@ -1337,6 +1337,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+  margin-bottom: 1.4rem;
 }
 
 .project-stack span {
@@ -1347,6 +1348,71 @@ img {
   border-radius: 4px;
   color: #777;
 }
+
+/* ===== PROJECT LINK BUTTONS ===== */
+.project-links {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+}
+
+.proj-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.proj-btn i {
+  font-size: 0.95rem;
+  transition: transform 0.3s;
+}
+
+.proj-btn:hover i {
+  transform: scale(1.2);
+}
+
+/* GitHub Button */
+.proj-btn-github {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #ccc;
+}
+
+.proj-btn-github:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.08);
+}
+
+/* Live Demo Button */
+.proj-btn-demo {
+  background: rgba(232, 232, 232, 0.1);
+  border: 1px solid rgba(232, 232, 232, 0.3);
+  color: #e0e0e0;
+}
+
+.proj-btn-demo:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.14);
+}
+
 
 /* ===== CONTACT ===== */
 .contact-wrap {
