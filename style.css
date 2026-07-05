@@ -872,8 +872,25 @@ img {
 }
 
 .info-icon {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-top: 2px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d0d0d0;
+  transition: all 0.3s;
+}
+
+.info-card:hover .info-icon {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(255,255,255,0.1);
 }
 
 .info-title {
@@ -931,8 +948,25 @@ img {
 }
 
 .strength-icon {
-  font-size: 2rem;
-  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cccccc;
+  transition: all 0.35s;
+}
+
+.strength-card:hover .strength-icon {
+  background: linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.07));
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(255,255,255,0.12);
+  transform: scale(1.08);
 }
 
 .strength-card h3 {
@@ -1012,9 +1046,23 @@ img {
 }
 
 .skill-icon {
-  font-size: 1.2rem;
-  color: #aaa;
-  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: #bbb;
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.skill-card:hover .skill-icon {
+  background: rgba(255,255,255,0.13);
+  color: #fff;
 }
 
 .skill-category {
